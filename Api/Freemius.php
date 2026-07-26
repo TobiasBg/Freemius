@@ -318,13 +318,15 @@
                     ),
                 ));
 
-                if (PHP_VERSION_ID < 80000) {
+                if (PHP_VERSION_ID < 80000)
+                {
                     curl_close($ch);
                 }
                 throw $e;
             }
 
-            if (PHP_VERSION_ID < 80000) {
+            if (PHP_VERSION_ID < 80000)
+            {
                 curl_close($ch);
             }
 
